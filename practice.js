@@ -8,25 +8,25 @@ var myName = 'so silly'
 
 //Create a variable called myAge that is a number data type
 
-var myAge = '12'
+var myAge = 12
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
-var lovesCode = 'True'
+var lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-var greatestFear = 'undefined'
+var greatestFear = undefined
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-var devMountainGoal = 'null'
+var devMountainGoal = null
 
 //////////////////PROBLEM 6////////////////////
 
@@ -36,7 +36,7 @@ var devMountainGoal = 'null'
 //plus the value of the name parameter.
 
 function greeting(name) {
-  return hello + 'name';
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -44,8 +44,8 @@ function greeting(name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-function newGreeting() {
-
+function newGreeting(name) {
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -65,7 +65,8 @@ var groceries = ['apples', 'milk', 'eggs', 'bread']
 var dog = {
   name: 'big boss',
   color: 'blue',
-  age: 3
+  age: 3,
+  goodBoy: true
 }
 
 //...access the dog's name from the object and assign it to a
@@ -83,10 +84,12 @@ var devMountainClassPet = dog['name']
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck(name) {
-  if (name) === 'Steven' {
+  if (name === 'Steven') {
     return 'What is up Steven?'
+  } else if (name === 'Bryan') {
+    return 'Hey Bryan!'
   } else {
-    return "Cool name, [name]"
+    return "Cool name, " + name;
   }
 }
 
@@ -97,7 +100,7 @@ function nameCheck(name) {
 // The add function should return the two parameters added together
 
 function add(x, y) {
-  x + y
+  return x + y;
 }
 
 //Now invoke add, passing in the numbers 3 and 4
@@ -115,11 +118,11 @@ var mathSum = add(1, 2)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder(color) {
-  if color === 'red'{
+  if (color === 'red') {
     return 'red is a great color'
-  } else if color === 'green'{
+  } else if (color === 'green') {
     return 'green is a solid favorite color'
-  } else if color === 'black' {
+  } else if (color === 'black') {
     return 'so trendy'
   } else {
     return 'you need to evaluate your favorite color choice'
